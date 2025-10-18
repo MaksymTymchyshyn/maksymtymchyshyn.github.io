@@ -1,3 +1,3 @@
 # Personal Portfolio Website
 
-# https://maksymtymchyshyn.github.io/
+# maksymtymchyshyn.github.io
