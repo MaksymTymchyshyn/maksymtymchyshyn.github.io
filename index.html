@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maksym Tymchyshyn - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">MT</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round">
+                        <span class="icon sun">☀️</span>
+                        <span class="icon moon">🌙</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="fade-in">Hi, I'm</span>
+                    <span class="name-highlight fade-in-delay-1">Maksym Tymchyshyn</span>
+                </h1>
+                <p class="hero-subtitle fade-in-delay-2">Computer Science Student & Aspiring Software Engineer</p>
+                <p class="hero-description fade-in-delay-3">
+                    Building innovative solutions through code and creativity
+                </p>
+                <div class="hero-cta fade-in-delay-4">
+                    <a href="#work" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        My name is Maksym. I was born and raised in Ukraine and moved to the United States in 2018. From a young age, I was always fascinated by computers and emerging technologies.
+                    </p>
+                    <p>
+                        Upon discovering programming, I knew I had found my calling. I'm currently pursuing my Computer Science degree at the University of Connecticut with a passion for building impactful software solutions.
+                    </p>
+                    <p>
+                        As a Software Engineering Fellow at Headstarter AI in New York, I developed expertise in modern web technologies and AI integration. I'm committed to staying at the forefront of AI innovation to maximize my potential, and I'm always eager to learn new technologies and tackle challenging projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <img src="assets/python_logo.png" alt="Python" class="skill-logo">
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/c_logo.png" alt="C" class="skill-logo">
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/js_logo.png" alt="JavaScript" class="skill-logo">
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/java_logo.png" alt="Java" class="skill-logo">
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/html_logo.png" alt="HTML" class="skill-logo">
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/css_logo.png" alt="CSS" class="skill-logo">
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/sql_logo.png" alt="SQL" class="skill-logo">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3 class="category-title">Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <img src="assets/react_logo.png" alt="React.js" class="skill-logo">
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/nextJS_logo.png" alt="Next.js" class="skill-logo">
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/nodeJS_logo.png" alt="Node.js" class="skill-logo">
+                        </div>
+                        <div class="skill-card">
+                            <img src="assets/firebase_logo.png" alt="Firebase" class="skill-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="education-content">
+                <div class="education-card">
+                    <img src="assets/uconn_logo.png" alt="University of Connecticut" class="education-logo">
+                    <div class="education-info">
+                        <h3>University of Connecticut</h3>
+                        <p class="education-degree">Bachelor of Science - BS, Computer Science</p>
+                        <p class="education-location">Stamford, CT</p>
+                        <p class="education-date">Expected Graduation: May 2027</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <img src="assets/headstarter_logo.png" alt="Headstarter AI" class="experience-logo">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <div class="experience-title">
+                                <h3>Software Engineering Fellow</h3>
+                                <div class="experience-company">Headstarter AI</div>
+                                <div class="experience-location">New York, NY</div>
+                            </div>
+                            <div class="experience-date">Jul. 2024 – Sep. 2024</div>
+                        </div>
+                        <div class="experience-description">
+                        <p>Participated in an intensive software engineering fellowship program focused on AI integration and modern web development practices.</p>
+                        <ul>
+                            <li>Developed full-stack applications using React.js, Next.js, and Node.js</li>
+                            <li>Integrated OpenAI API to build intelligent features and AI-powered solutions</li>
+                            <li>Collaborated with cross-functional teams on real-world projects</li>
+                            <li>Implemented Firebase for backend services and real-time data management</li>
+                            <li>Utilized Git/GitHub for version control and collaborative development</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Work</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/yquantum_logo.png" alt="YQuantum Hackathon">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Yale Quantum Hackathon</h3>
+                        <p>Winning Quantum Computing project utilizing Python and Tangelo</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Tangelo</span>
+                            <span class="tag">Quantum Computing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/pantry_tracker.png" alt="Pantry Tracker">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pantry Tracker</h3>
+                        <p>Full-stack application for tracking pantry inventory with real-time updates</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/signal_street.png" alt="Signal Street">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Signal Street</h3>
+                        <p>AI-powered web application with intelligent features and modern design</p>
+                        <div class="project-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">OpenAI API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    Have a project in mind? Let's create something amazing together.
+                </p>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary submit-btn">Send Message</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+
+                <div class="contact-methods">
+                    <div class="contact-card email-card">
+                        <img src="assets/gmail_logo.png" alt="Gmail" class="contact-logo">
+                        <h3>Email</h3>
+                        <p id="email-text" onclick="copyEmail(event)">timchishinmaksim@gmail.com</p>
+                        <span class="copy-message" id="copy-message">Copied!</span>
+                    </div>
+                    <a href="https://www.linkedin.com/in/maksym-tymchyshyn/" target="_blank" class="contact-card">
+                        <img src="assets/linkedin_logo.png" alt="LinkedIn" class="contact-logo">
+                        <h3>LinkedIn</h3>
+                        <p>Connect with me</p>
+                    </a>
+                    <a href="https://github.com/MaksymTymchyshyn" target="_blank" class="contact-card">
+                        <img src="assets/github_logo.png" alt="GitHub" class="contact-logo">
+                        <h3>GitHub</h3>
+                        <p>Check out my code</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Maksym Tymchyshyn. All rights reserved.</p>
+            <p class="footer-subtitle">Designed & Built with passion</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
