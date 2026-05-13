@@ -47,6 +47,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                     top: targetPosition,
                     behavior: 'smooth'
                 });
+            } else if (targetId === '#experience-title') {
+                const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 0;
+                const offset = navbarHeight + 24;
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
             } else {
                 target.scrollIntoView({
                     behavior: 'smooth',
